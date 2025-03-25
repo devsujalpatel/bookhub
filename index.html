@@ -5,9 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <header>
+            <h1>Book Library</h1>
+            <div class="search-container">
+                <i class="ri-search-line"></i>
+                <input type="text" id="search-input" placeholder="eg.booktitle">
+            </div>
+            <div class="filter-list-container">
+                <button class="filter-list-btn" id="view-btn">List View</button>
+                <button class="filter-list-btn" id="title-sort-btn">Sort With Title</button>
+                <button class="filter-list-btn" id="date-sort-btn">Sort With Date</button>
+            </div>
+        </header>
+        <main id="library">
+            <div class="book">
+                <div class="thumbnail">
+                  <a href="http://books.google.co.in/books?id=UFGaCwAAQBAJ&amp;dq=developer&amp;hl=&amp;source=gbs_api" target="_blank">
+                    <img src="http://books.google.com/books/content?id=UFGaCwAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="Android Development Patterns">
+                  </a>
+                </div>
+          
+                <a href="http://books.google.co.in/books?id=UFGaCwAAQBAJ&amp;dq=developer&amp;hl=&amp;source=gbs_api" target="_blank">
+                  <div class="book-info">
+                   
+                    <div class="book-title">
+                      Android Development Patterns
+                    </div>
+                     <div class="book-author">
+                      By Phil Dutson
+                    </div>
+                    <div class="publisher">
+                      <b>Seller:</b> Addison-Wesley Professional
+                    </div>
+                    <div class="published-date">
+                      <b>Date:</b> 2016-02-18
+                    </div>
+                  </div>
+                </a>
+              </div>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
